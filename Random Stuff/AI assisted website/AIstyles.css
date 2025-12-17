@@ -1,0 +1,268 @@
+:root {
+    --byu-blue: #001E4C; /* Royal Blue */
+    --byu-white: #FFFFFF;
+    --byu-background: #F4F7F9; /* Very light gray for subtle background */
+    --byu-text: #333333; /* Dark text for readability */
+    --byu-accent-red: #dc2626; /* For the "rizz" warning */
+}
+
+/* --- Base and Layout Styles --- */
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--byu-background);
+    color: var(--byu-text);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* --- Navigation Styles (.nav) --- */
+
+.nav {
+    background-color: var(--byu-blue);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    padding: 0.75rem 0;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.nav-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.nav a {
+    color: var(--byu-white);
+    text-decoration: none;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav a:hover {
+    background-color: var(--byu-white);
+    color: var(--byu-blue);
+}
+
+.separator {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* --- Header Styles (.header) --- */
+
+.header {
+    background-color: var(--byu-blue);
+    padding: 2.5rem 0;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.header h1 {
+    color: var(--byu-white);
+    font-size: 4rem;
+    font-weight: 900;
+    letter-spacing: -0.05em;
+    margin: 0;
+}
+
+/* --- Main Content Card Styles (.main-content-card) --- */
+
+main .container {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.main-content-card {
+    background-color: var(--byu-white);
+    padding: 2rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    border-top: 8px solid var(--byu-blue);
+}
+
+.main-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--byu-blue);
+}
+
+.main-subtitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: #4b5563; /* Gray-700 equivalent */
+}
+
+.content-paragraph {
+    margin-bottom: 2rem;
+    color: #4b5563;
+    padding: 1rem;
+    background-color: var(--byu-background);
+    border-radius: 0.5rem;
+}
+
+/* --- Rizz/Warning Text (.rizz) --- */
+
+.rizz {
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    color: var(--byu-accent-red);
+    border-left: 4px solid var(--byu-accent-red);
+    padding-left: 0.75rem;
+}
+
+/* --- Links, Buttons, and Images --- */
+
+.content-section {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.button-link {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--byu-blue);
+    color: var(--byu-white);
+    font-weight: bold;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 1px solid var(--byu-blue);
+}
+
+.button-link:hover {
+    background-color: var(--byu-white);
+    color: var(--byu-blue);
+    transform: scale(1.05);
+}
+
+.image-wrapper {
+    width: 100%;
+}
+
+.content-image {
+    max-width: 100%;
+    height: auto;
+    width: 100%; /* Default to full width on small screens */
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    margin-top: 1rem;
+    transition: all 0.5s ease;
+}
+
+.content-image:hover {
+    opacity: 0.8;
+}
+
+.border-blue {
+    border: 4px solid var(--byu-blue);
+}
+
+.border-white {
+    border: 4px solid var(--byu-white);
+}
+
+/* --- List Styles --- */
+
+.list-section {
+    margin-top: 2.5rem;
+}
+
+.list-header {
+    font-size: 1.875rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--byu-blue);
+    border-bottom: 1px solid var(--byu-blue);
+    padding-bottom: 0.5rem;
+}
+
+.main-list {
+    list-style-type: decimal;
+    list-style-position: inside;
+    padding-left: 1.25rem;
+    color: #4b5563;
+}
+
+.main-list > li {
+    font-weight: bold;
+    color: var(--byu-blue);
+    margin-bottom: 0.5rem;
+}
+
+.sub-list {
+    list-style-type: disc;
+    list-style-position: inside;
+    margin-left: 1.25rem;
+    font-weight: normal;
+    color: #6b7280; /* Gray-600 equivalent */
+    margin-top: 0.25rem;
+}
+
+/* --- Footer Styles (.footer) --- */
+
+.footer {
+    background-color: var(--byu-blue);
+    padding: 1.5rem 0;
+    margin-top: auto; /* Pushes footer to the bottom */
+    text-align: center;
+}
+
+.footer h1 {
+    color: var(--byu-white);
+    font-size: 0.875rem;
+    font-weight: 300;
+    margin: 0;
+}
+
+
+/* --- Responsive Adjustments (for screens larger than 768px - tablets/desktop) --- */
+
+@media (min-width: 768px) {
+    
+    .nav-content {
+        gap: 2rem;
+        font-size: 1.25rem;
+    }
+
+    .header h1 {
+        font-size: 5rem;
+    }
+
+    .main-content-card {
+        padding: 3rem;
+    }
+    
+    .main-title {
+        font-size: 3rem;
+    }
+
+    .image-wrapper {
+        width: 33.333%; /* 1/3 width as originally specified */
+        float: left;
+        margin-right: 1.5rem;
+    }
+    
+    .content-image {
+        /* Keep image styles */
+    }
+}

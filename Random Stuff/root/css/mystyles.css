@@ -1,0 +1,9 @@
+body{
+    font-family: cursive, 'Times New Roman', Times, serif;
+}
+h1, h2, h3, h4, h5, h6, p, a {
+    font-family: cursive;
+}
+.csfont{
+    font-family: cursive !important;
+}
